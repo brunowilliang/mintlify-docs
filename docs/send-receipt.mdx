@@ -1,6 +1,6 @@
 ---
 title: Send a Receipt
-description: How to send a receipt
+description: How to send a donation receipt to donors via email
 sidebarTitle: Send Receipt
 ---
 
@@ -8,3 +8,70 @@ import { VideoFrame } from '/components/VideoFrame.jsx';
 
 <VideoFrame src="/videos/send-receipt.mp4" />
 
+After successfully processing a donation, you can instantly send a receipt to the donor's email address.
+
+<Steps>
+<Step>
+
+#### Complete the Donation
+
+Follow the [donation process](/docs/start-donation) until you see the **"Donation Success"** screen.
+
+</Step>
+<Step>
+
+#### Request Receipt
+
+On the success screen, you'll see the prompt:
+
+**"Would you like a receipt?"**
+
+Tap this button to open the receipt sending form.
+
+<Callout type="info" title="Optional Step">
+  Sending a receipt is optional. You can skip this step if the donor doesn't require one.
+</Callout>
+
+</Step>
+<Step>
+
+#### Enter Email Address
+
+A text field will appear asking for the donor's email address.
+
+Enter the email address where the receipt should be sent.
+
+<Callout type="warning" title="Email Validation">
+  Make sure to enter a valid email address. The receipt will be sent immediately and cannot be resent from this screen.
+</Callout>
+
+</Step>
+<Step>
+
+#### Send Receipt
+
+Tap the `Send` button to deliver the receipt to the provided email address.
+
+<Callout type="success" title="Receipt Sent">
+  The donor will receive a detailed receipt including:
+  - Donation amount
+  - Date and time
+  - Fundraising page details
+  - Transaction reference
+</Callout>
+
+</Step>
+</Steps>
+
+---
+
+## Best Practices
+
+<Note>
+  **Pro Tip:** Always confirm the email address with the donor before sending to avoid delivery issues.
+</Note>
+
+- Double-check the email address before sending
+- Ask donors to add your email domain to their contacts
+- Inform donors that the receipt will arrive within a few minutes
+- Keep transaction references for your records

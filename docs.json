@@ -34,7 +34,7 @@
         ]
       },
       {
-        "group": "Donations",
+        "group": "Transactions",
         "pages": [
           "docs/start-donation",
           "docs/send-receipt"
