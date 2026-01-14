@@ -26,6 +26,19 @@
           "docs/magic-link",
           "docs/forgot-password"
         ]
+      },
+      {
+        "group": "Pages",
+        "pages": [
+          "docs/create-simple-page"
+        ]
+      },
+      {
+        "group": "Donations",
+        "pages": [
+          "docs/start-donation",
+          "docs/send-receipt"
+        ]
       }
     ]
   },
