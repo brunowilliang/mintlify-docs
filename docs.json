@@ -1,85 +1,82 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "iDonate Tap",
-  "description": "Documentation for iDonate Tap",
-  "colors": {
-    "primary": "#34B774",
-    "light": "#34B774",
-    "dark": "#34B774"
-  },
-  "favicon": "logo/favicon.svg",
-  "navigation": {
-    "groups": [
-      {
-        "group": "Getting Started",
-        "root": "index",
-        "pages": [
-          "index"
-        ]
-      },
-      {
-        "group": "Authentication",
-        "pages": [
-          "docs/login",
-          "docs/sign-up",
-          "docs/magic-link",
-          "docs/forgot-password"
-        ]
-      },
-      {
-        "group": "Pages",
-        "pages": [
-          "docs/create-simple-page"
-        ]
-      },
-      {
-        "group": "Transactions",
-        "pages": [
-          "docs/start-donation",
-          "docs/send-receipt"
-        ]
-      }
-    ]
-  },
-  "logo": {
-    "light": "/logo/logo.svg",
-    "dark": "/logo/logo.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:florian@idonate.ie",
-        "icon": "envelope"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Go to iDonate.ie",
-      "href": "https://idonate.ie"
-    }
-  },
-  "footer": {
-    "socials": {
-      "facebook": "https://www.facebook.com/iDonate.ie",
-      "instagram": "https://www.instagram.com/idonate.ie/",
-      "x": "https://x.com/iDonate_ie",
-      "linkedin": "https://www.linkedin.com/company/idonate-ireland/"
-    }
-  },
-  "errors": {
-    "404": {
-      "title": "Page not found",
-      "description": "The page you are looking for does not exist. Please check the URL and try again.",
-      "redirect": false
-    }
-  },
-  "background": {
-    "color": {
-      "light": "#F3F6F8",
-      "dark": "#0E0F0E"
-    },
-    "decoration": "grid"
-  }
+	"$schema": "https://mintlify.com/docs.json",
+	"theme": "mint",
+	"name": "iDonate Tap",
+	"description": "Documentation for iDonate Tap",
+	"colors": {
+		"primary": "#34B774",
+		"light": "#34B774",
+		"dark": "#34B774"
+	},
+	"favicon": "logo/favicon.svg",
+	"navigation": {
+		"groups": [
+			{
+				"group": "Getting Started",
+				"root": "index",
+				"pages": ["index"]
+			},
+			{
+				"group": "Authentication",
+				"pages": [
+					"docs/login",
+					"docs/sign-up",
+					"docs/magic-link",
+					"docs/forgot-password"
+				]
+			},
+			{
+				"group": "Pages",
+				"pages": ["docs/create-page"]
+			},
+			{
+				"group": "Transactions",
+				"pages": [
+					"docs/start-donation",
+					"docs/product-mode",
+					"docs/send-receipt"
+				]
+			}
+		]
+	},
+	"logo": {
+		"light": "/logo/logo.svg",
+		"dark": "/logo/logo.svg"
+	},
+	"navbar": {
+		"links": [
+			{
+				"label": "Support",
+				"href": "mailto:helpdesk@idonate.ie ",
+				"icon": "envelope"
+			}
+		],
+		"primary": {
+			"type": "button",
+			"label": "Go to iDonate.ie",
+			"href": "https://idonate.ie"
+		}
+	},
+	"footer": {
+		"socials": {
+			"facebook": "https://www.facebook.com/iDonate.ie",
+			"instagram": "https://www.instagram.com/idonate.ie/",
+			"x": "https://x.com/iDonate_ie",
+			"linkedin": "https://www.linkedin.com/company/idonate-ireland/"
+		}
+	},
+	"errors": {
+		"404": {
+			"title": "Page not found",
+			"description": "The page you are looking for does not exist. Please check the URL and try again.",
+			"redirect": false
+		}
+	},
+	"background": {
+		"color": {
+			"light": "#F3F6F8",
+			"dark": "#0E0F0E"
+		},
+		"decoration": "grid"
+	}
 }

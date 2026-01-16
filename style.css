@@ -1,0 +1,11 @@
+@import url("https://use.typekit.net/vpg3nlp.css");
+
+* {
+	font-family: "degular", sans-serif !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-size: 116%;
+}
