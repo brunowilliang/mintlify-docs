@@ -14,7 +14,9 @@
 			{
 				"group": "Getting Started",
 				"root": "index",
-				"pages": ["index"]
+				"pages": [
+					"index"
+				]
 			},
 			{
 				"group": "Authentication",
@@ -27,7 +29,12 @@
 			},
 			{
 				"group": "Pages",
-				"pages": ["docs/create-page"]
+				"pages": [
+					"docs/create-page",
+					"docs/edit-page",
+					"docs/deactivate-page",
+					"docs/reactivate-page"
+				]
 			},
 			{
 				"group": "Transactions",

@@ -1,0 +1,347 @@
+# Documentation Rules - iDonate Tap
+
+Este documento contém todas as regras e padrões para criar e manter a
+documentação do iDonate Tap.
+
+---
+
+## 📋 Estrutura do Arquivo
+
+### Frontmatter
+
+Todos os arquivos `.mdx` devem ter o seguinte frontmatter:
+
+```yaml
+---
+title: [Título da Página]
+description: [Descrição curta da página]
+sidebarTitle: [Título que aparece no sidebar]
+---
+```
+
+**Obrigatório:**
+
+- `title`: Título principal da página
+- `description`: Descrição breve do conteúdo
+- `sidebarTitle`: Nome que aparece na navegação lateral
+
+---
+
+## 🎬 Componente de Vídeo
+
+Sempre incluir o componente de vídeo no início da página:
+
+```jsx
+import { VideoFrame } from "/components/VideoFrame.jsx";
+
+<VideoFrame src="/videos/nome-do-video.mp4" />;
+```
+
+---
+
+## 📝 Componentes de Destaque
+
+### Regra Principal: `<Callout>` vs `<Note>`
+
+**DENTRO dos `<Steps>`:**
+
+```jsx
+<Callout>
+  Texto aqui
+</Callout>;
+```
+
+**FORA dos `<Steps>`:**
+
+```jsx
+<Note>
+  Texto aqui
+</Note>;
+```
+
+### Exemplo Correto:
+
+```jsx
+<Steps>
+<Step>
+
+#### Título do Step
+
+Texto do step.
+
+<Callout>
+Informação importante dentro do step
+</Callout>
+
+</Step>
+</Steps>
+
+<Note>
+Informação importante fora dos steps
+</Note>
+```
+
+---
+
+## 🔤 Formatação de Texto
+
+### Uso de Backticks (`)
+
+**SEMPRE use backticks para:**
+
+- Nomes de botões: `Sign in`, `Create`, `Send`
+- Nomes de campos: `Email`, `Password`, `First Name`
+- Termos técnicos importantes
+- Nomes de telas: `Donation Success`
+- Opções de menu: `Simple Fundraiser`
+
+**Exemplo:**
+
+```markdown
+Enter your `Email` and `Password`. Tap the `Sign in` button.
+```
+
+### Uso de Negrito (**)
+
+**Use negrito apenas para:**
+
+- Títulos de seções dentro de Notes
+- Cabeçalhos de perguntas importantes
+
+**Exemplo:**
+
+```jsx
+<Note>
+  **Best Practices**
+
+  Pro Tip: Always confirm the email address.
+</Note>;
+```
+
+### O que NÃO fazer:
+
+❌ **NÃO use negrito em textos normais** (use backticks) ❌ **NÃO use aspas
+duplas para destacar** (use backticks) ❌ **NÃO misture negrito com backticks**
+sem necessidade
+
+---
+
+## 📚 Estrutura de Steps
+
+### Template Padrão:
+
+```jsx
+<Steps>
+  <Step>
+    #### Título do Step
+
+    Descrição do passo com uso de `backticks` para elementos importantes.
+
+    <Callout>
+      Informação adicional ou nota importante
+    </Callout>
+  </Step>
+  <Step>
+    #### Próximo Step
+
+    Continuar com o mesmo padrão.
+  </Step>
+</Steps>;
+```
+
+### Regras para Steps:
+
+1. Sempre use heading `####` para títulos de steps
+2. Mantenha uma linha em branco antes e depois do título
+3. Use `<Callout>` para informações adicionais
+4. Descreva ações de forma clara e objetiva
+
+---
+
+## 🔗 Links
+
+### Links Internos:
+
+Use links para outras páginas da documentação:
+
+```markdown
+[Learn more](/docs/magic-link) [Sign up here](/docs/sign-up)
+```
+
+### Quando usar links:
+
+✅ Links para outras páginas da documentação ✅ Links de "Learn more" ✅ Links
+relacionados
+
+❌ Evite links desnecessários em meio ao texto de instruções
+
+---
+
+## 📑 Listas
+
+### Listas com Bullets:
+
+```markdown
+- Item 1
+- Item 2
+- Item 3
+```
+
+### Listas em Callouts:
+
+```jsx
+<Callout>
+  The donor will receive: - Donation amount - Date and time - Transaction
+  reference
+</Callout>;
+```
+
+---
+
+## 🎨 Seções Extras
+
+### Best Practices:
+
+```jsx
+<Note>
+  **Best Practices**
+
+  Pro Tip: Descrição do tip.
+
+  - Ponto 1 - Ponto 2 - Ponto 3
+</Note>;
+```
+
+### Alternative Methods:
+
+```markdown
+---
+
+## Alternative login methods
+
+- `Option 1` - Description. [Learn more](/docs/link)
+- `Option 2` - Description. [Learn more](/docs/link)
+```
+
+---
+
+## ✅ Checklist para Nova Página
+
+Antes de finalizar uma página, verifique:
+
+- [ ] Frontmatter completo (title, description, sidebarTitle)
+- [ ] Componente VideoFrame incluído
+- [ ] `<Callout>` usado DENTRO dos Steps
+- [ ] `<Note>` usado FORA dos Steps
+- [ ] Backticks em botões, campos e termos importantes
+- [ ] Nenhum negrito desnecessário
+- [ ] Steps com título `####`
+- [ ] Espaçamento correto entre elementos
+- [ ] Links funcionando
+- [ ] Página adicionada ao `docs.json`
+
+---
+
+## 📖 Componentes Mintlify Disponíveis
+
+Documentação completa: https://www.mintlify.com/docs/components
+
+### Mais Usados:
+
+- `<Steps>` e `<Step>` - Passos sequenciais
+- `<Callout>` - Destaque dentro de steps
+- `<Note>` - Destaque fora de steps
+- `<Accordion>` - Conteúdo expansível
+- `<Tabs>` - Conteúdo em abas
+- `<Card>` - Cards com links
+
+---
+
+## 🚫 Erros Comuns
+
+### ❌ Errado:
+
+```jsx
+<Steps>
+  <Step>
+    Enter your Email and Password. Tap Sign in.
+
+    <Note>
+      This is wrong!
+    </Note>
+  </Step>
+</Steps>;
+```
+
+### ✅ Correto:
+
+```jsx
+<Steps>
+  <Step>
+    #### Enter your credentials
+
+    Enter your `Email` and `Password`. Tap `Sign in`.
+
+    <Callout>
+      This is correct!
+    </Callout>
+  </Step>
+</Steps>;
+```
+
+---
+
+## 📝 Exemplo Completo
+
+```jsx
+---
+title: Example Page
+description: How to do something
+sidebarTitle: Example Page
+---
+
+import { VideoFrame } from '/components/VideoFrame.jsx';
+
+<VideoFrame src="/videos/example.mp4" />
+
+Brief introduction text here.
+
+<Steps>
+<Step>
+
+#### Step Title
+
+Enter your `Email` and tap the `Submit` button.
+
+<Callout>
+Important information about this step.
+</Callout>
+
+</Step>
+<Step>
+
+#### Next Step
+
+Continue with the process.
+
+</Step>
+</Steps>
+
+<Note>
+**Best Practices**
+
+Pro Tip: Always double-check your input.
+
+- Tip 1
+- Tip 2
+</Note>
+```
+
+---
+
+## 🔄 Atualizações
+
+Este documento deve ser atualizado sempre que novos padrões forem estabelecidos
+ou regras modificadas.
+
+**Última atualização:** Versão 1.0
