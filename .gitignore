@@ -3,3 +3,7 @@ scripts/optimize-videos.sh
 
 # Original unoptimized videos (backup)
 videos/old/
+
+# Claude configuration
+.claude/
+CLAUDE.md
