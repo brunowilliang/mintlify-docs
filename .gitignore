@@ -1,0 +1,5 @@
+# Video optimization script
+scripts/optimize-videos.sh
+
+# Original unoptimized videos (backup)
+videos/old/
