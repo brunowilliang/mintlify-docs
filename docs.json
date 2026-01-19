@@ -43,6 +43,12 @@
 					"docs/product-mode",
 					"docs/send-receipt"
 				]
+			},
+			{
+				"group": "Troubleshooting",
+				"pages": [
+					"docs/troubleshooting-discover-readers"
+				]
 			}
 		]
 	},

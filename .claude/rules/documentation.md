@@ -238,6 +238,7 @@ Antes de finalizar uma página, verifique:
 - [ ] Steps com título `####`
 - [ ] Espaçamento correto entre elementos
 - [ ] Links funcionando
+- [ ] **Nenhuma menção a vendors/terceiros** (Stripe, etc.)
 - [ ] Página adicionada ao `docs.json`
 
 ---
@@ -254,6 +255,29 @@ Documentação completa: https://www.mintlify.com/docs/components
 - `<Accordion>` - Conteúdo expansível
 - `<Tabs>` - Conteúdo em abas
 - `<Card>` - Cards com links
+
+---
+
+## 🔒 Regras de Conteúdo
+
+### Não mencionar nomes de vendors/terceiros
+
+**NUNCA mencione nomes de serviços de terceiros na documentação:**
+
+❌ **NÃO mencione:**
+
+- Stripe
+- Stripe Terminal
+- Outros nomes de vendors ou serviços externos
+
+✅ **Use termos genéricos:**
+
+- "card reader" (ao invés de "Stripe Terminal reader")
+- "payment connection" (ao invés de "Stripe connection")
+- "card reader connection" (ao invés de "Stripe Terminal connection")
+
+**Motivo:** O usuário final não precisa saber quais serviços de terceiros são
+utilizados internamente.
 
 ---
 
@@ -344,4 +368,6 @@ Pro Tip: Always double-check your input.
 Este documento deve ser atualizado sempre que novos padrões forem estabelecidos
 ou regras modificadas.
 
-**Última atualização:** Versão 1.0
+**Última atualização:** Versão 1.1
+
+- Adicionada regra para não mencionar nomes de vendors/terceiros (Stripe, etc.)
