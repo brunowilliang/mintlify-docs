@@ -4,6 +4,9 @@ scripts/optimize-videos.sh
 # Original unoptimized videos (backup)
 videos/old/
 
+# macOS system files
+.DS_Store
+
 # Claude configuration
 .claude/
 CLAUDE.md
